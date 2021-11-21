@@ -11,7 +11,7 @@ function carregar() {
     }
     else if (hora > 5 && hora <= 12) {
         imagem.src = 'Imagens/morning_round_pp.jpg'
-        document.body.style.background = '#f8c78d' /**/
+        document.body.style.background = '#f8c78d'
         mensagem.innerHTML += 'da manhã.'
     }
     else if (hora == 1) {
