@@ -9,7 +9,7 @@ function carregar() {
         document.body.style.background = '#6f4c6d'
         mensagem.innerHTML += 'da madrugada.'
     }
-    else if (hora > 5 && hora <= 12) {
+    else if (hora > 5 && hora < 12) {
         imagem.src = 'Imagens/morning_round_pp.jpg'
         document.body.style.background = '#f8c78d'
         mensagem.innerHTML += 'da manhã.'
@@ -19,7 +19,12 @@ function carregar() {
         imagem.src = 'Imagens/madrugada_round_pp.jpg'
         document.body.style.background = '#6f4c6d'
     }
-    else if (hora >= 12 && hora <= 18) {
+    else if (hora == 12) {
+        mensagem.innerHTML = 'Agora é meio-dia.'
+        imagem.src = 'Imagens/morning_round_pp.jpg'
+        document.body.style.background = '#f8c78d'
+    }
+    else if (hora >= 13 && hora <= 18) {
         imagem.src = 'Imagens/afternoon_round_pp.jpg' /*Boa Tarde!*/
         document.body.style.background = '#ea761c'
         mensagem.innerHTML += 'da tarde.'
